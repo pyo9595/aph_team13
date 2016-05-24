@@ -618,8 +618,12 @@ def Test_method(input):
     node = test_basic_paser.parse_expr()
     cute_inter = CuteInterpreter()
     result = cute_inter.run_expr(node)
+    print "...",    #, is for spacing
     print print_node(result)
 
 def Test_All():
+    while 1 :
+        a = raw_input("> ")
+        Test_method(a)
     
 Test_All()
